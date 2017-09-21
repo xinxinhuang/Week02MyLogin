@@ -16,8 +16,8 @@
         <h2>${message}</h2>
         <div>
             <form action="Login" method="post">
-                Username :   <input type="text" name="usern" value="${param.usern}"><br>
-                Password :   <input type="text" name="passw" value="${param.passw}"><br>
+                Username :   <input type="text" name="usern" value="${usern}"><br>
+                Password :   <input type="text" name="passw" value="${passw}"><br>
                 <input type="submit" value="Login">
             </form>
         </div>

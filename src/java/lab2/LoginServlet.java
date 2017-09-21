@@ -59,6 +59,8 @@ public class LoginServlet extends HttpServlet {
         else if(!us.login(user, pass))
         {
             request.setAttribute("message", "Wrong user name or password.");
+            request.setAttribute("usern", user);
+            request.setAttribute("passw", pass);
             getServletContext().getRequestDispatcher("/WEB-INF/Login.jsp").forward(request, response);
         }
         else
