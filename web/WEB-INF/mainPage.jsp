@@ -14,6 +14,9 @@
     <body>
         <h1>Main Page</h1>
         <p>Hello,<h3>${username}</h3></p><br>
-        <a href="Login">Logout</a>
+        <form action="mainPage" method="post">
+        <input type="submit" value="Logout">
+        </form>
+        
     </body>
 </html>
